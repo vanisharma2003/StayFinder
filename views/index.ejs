@@ -1,0 +1,22 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+    <div class="container">
+        <div class="row">
+            <% for (listing of allListings) { %>
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="<%= listing.image.url %>" class="card-img-top" />
+                    <div class="card-body">
+                        <h5 class="card-title"><%= listing.title %></h5>
+ <% const truncatedDescription = truncateText(listing.description, 20); %>
+<p class="card-text"><%= truncatedDescription %></p>
+                        <a href="/listing/<%= listing._id %>" class="btn btn-primary">View More</a>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+    </body>
+    
+</body>

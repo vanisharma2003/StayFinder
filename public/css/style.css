@@ -1,0 +1,75 @@
+.navbar{
+    height: 80px !important;
+}
+.fa-compass{
+    font-size: 40px;
+    color: red;
+    margin-left: 5px;
+}
+.nav-link{
+    font-size: 20px !important;
+    color: black !important;
+    margin-left: 30px;
+    font-weight: bolder !important;
+}
+.footer {
+    background-color: white !important;
+    color: black !important;
+    padding: 20px 0 !important;
+  }
+  .footer a {
+    color: black !important;
+    text-decoration: none;
+  }
+  .card-img-top{
+    width: 250px;
+    height: 250px;
+  }
+  .card{
+    margin-top: 20px;
+  }
+  .logo{
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+  }
+  .main-heading{
+    color: red;
+    margin-top: 4px;
+  }
+.home-card{
+    width: 300px !important;
+    height: 350px !important;
+    border-radius: 10px;
+   transition: transform 0.3s;
+}
+.home-card:hover{
+    transform: scale(1.05);
+}
+.card{
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+   transition: transform 0.3s;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.btn{
+    background-color: red !important;
+    border: transparent !important;
+}
+.img-fluid{
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+}
+.text-style{
+    font-size: 20px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ 

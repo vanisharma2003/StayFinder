@@ -1,0 +1,42 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+    <h1 class="main-heading">Edit</h1>
+    <form class="container-fluid" method="post" action="/listing/<%=data._id%>/?_method=put">
+        <div class="mb-3">
+            <label for="title">Edit title</label>
+          <input type="text" class="form-control" value="<%=data.title%>" name="title" id="title"/>
+        </div>
+        <div class="mb-3">
+            <label for="url">Edit url</label>
+          <input type="text" class="form-control" value="<%=data.image.url%>" name="url" id="url"/>
+        </div>
+        <div class="mb-3">
+            <label for="price">Edit price</label>
+            <input type="number" class="form-control" value="<%=data.price%>" name="price" id="price"/>
+          </div>
+          <div class="mb-3">
+            <label for="location">Edit location</label>
+            <input type="text" class="form-control" value="<%=data.location%>" name="location" id="location"/>
+          </div>
+          <div class="mb-3">
+            <label for="description">Edit description</label>
+            <input type="text" class="form-control" value="<%=data.description%>" name="description" id="description"/>
+          </div>
+          <div class="mb-3">
+            <label for="country">Edit country</label>
+            <input type="text" class="form-control" value="<%=data.country%>" name="country" id="country"/>
+          </div>
+          
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    <!-- <form method="post" action="/listing/<%=data._id%>/?_method=put">
+        <input type="text" value="<%=data.title%>" name="title"/><br><br>
+        <input type="text" value="<%=data.image.url%>" name="url"/><br><br>
+        <input type="number" value="<%=data.price%>" name="price"/><br><br>
+        <input type="text" value="<%=data.location%>" name="location"/><br><br>
+        <input type="text" value="<%=data.description%>" name="description"/><br><br>
+        <input type="text" value="<%=data.country%>" name="country"/><br><br>
+        <button>edit </button>
+
+    </form> -->
+</body>

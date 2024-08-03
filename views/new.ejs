@@ -1,0 +1,31 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+    <form method="POST" action="/listing" class="container-fluid">
+        <div class="mb-3">
+            <label for="title">Enter title</label>
+          <input type="text" class="form-control" name="title" id="title"/>
+        </div>
+        <div class="mb-3">
+            <label for="url">Enter url</label>
+          <input type="text" class="form-control"  name="image[url]" id="url"/>
+        </div>
+        <div class="mb-3">
+            <label for="price">Enter price</label>
+            <input type="number" class="form-control"  name="price" id="price"/>
+          </div>
+          <div class="mb-3">
+            <label for="location">Enter location</label>
+            <input type="text" class="form-control"  name="location" id="location"/>
+          </div>
+          <div class="mb-3">
+            <label for="description">Enter description</label>
+            <input type="text" class="form-control" name="description" id="description"/>
+          </div>
+          <div class="mb-3">
+            <label for="country">Enter country</label>
+            <input type="text" class="form-control" name="country" id="country"/>
+          </div>
+          
+        <button class="btn btn-primary">Submit</button>
+    </form>
+</body>

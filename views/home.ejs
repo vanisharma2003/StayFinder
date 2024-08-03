@@ -1,0 +1,18 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+    <h1 class="main-heading">Discover Your Perfect Stay - Homes,Hotels,and Apartments for every Traveler</h1>
+    <div class="container">
+        <div class="row">
+            <% for (listing of allListings) { %>
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card home-card">
+                  <a href="/listing/<%=listing._id%>"><img src="<%= listing.image.url %>" class="card-img-top" /></a>  
+                    <div class="card-body">
+                        <h5 class="card-title"><%= listing.title %></h5>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</body>

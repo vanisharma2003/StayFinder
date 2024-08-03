@@ -1,0 +1,14 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+    <div>
+    <h1><%=data.title%></h1>
+    <img src="<%=data.image.url%>" class="img-fluid"/>
+    <p class="text-style"><%=data.description%></p>
+    <p class="text-style"><%=data.location%></p>
+    <p class="text-style"><%=data.price%></p><!--toLocalString-->
+    <p class="text-style"><%=data.country%></p>
+    <a href="/listing/<%=data._id%>/edit"><button class="btn btn-primary" style="margin-top: 5px;">Edit</button></a>
+   <form method="post" action="/listing/<%=data._id%>/?_method=delete"><button class="btn btn-primary" style="margin-top: 5px;">Delete</button></form>
+    </div>
+    
+</body>
